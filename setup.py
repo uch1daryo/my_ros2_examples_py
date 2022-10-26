@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'ex01_node = my_ros2_examples_py.ex01:main'
         ],
     },
 )
