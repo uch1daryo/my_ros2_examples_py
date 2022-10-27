@@ -22,6 +22,8 @@ setup(
         'console_scripts': [
             'ex01_node = my_ros2_examples_py.ex01:main',
             'ex02_node = my_ros2_examples_py.ex02:main',
+            'ex03_publisher = my_ros2_examples_py.ex03_publisher:main',
+            'ex03_subscriber = my_ros2_examples_py.ex03_subscriber:main',
         ],
     },
 )
