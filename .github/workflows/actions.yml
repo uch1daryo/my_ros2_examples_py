@@ -1,0 +1,15 @@
+name: build and test my_ros2_examples_py
+
+on: [push]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: ros-tooling/setup-ros@v0.4
+        with:
+          required-ros-distributions: humble
+      - uses: ros-tooling/action-ros-ci@v0.2
+        with:
+          package-name: my_ros2_examples_py
+          target-ros2-distro: humble
