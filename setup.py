@@ -24,6 +24,8 @@ setup(
             'ex02_node = my_ros2_examples_py.ex02:main',
             'ex03_publisher = my_ros2_examples_py.ex03_publisher:main',
             'ex03_subscriber = my_ros2_examples_py.ex03_subscriber:main',
+            'ex04_service = my_ros2_examples_py.ex04_service:main',
+            'ex04_client = my_ros2_examples_py.ex04_client:main',
         ],
     },
 )
