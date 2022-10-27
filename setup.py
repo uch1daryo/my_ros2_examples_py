@@ -1,3 +1,6 @@
+from glob import glob
+import os
+
 from setuptools import setup
 
 package_name = 'my_ros2_examples_py'
@@ -10,6 +13,7 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        (os.path.join('share', package_name), glob('launch/*launch.[pxy][yma]*')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -26,6 +30,7 @@ setup(
             'ex03_subscriber = my_ros2_examples_py.ex03_subscriber:main',
             'ex04_service = my_ros2_examples_py.ex04_service:main',
             'ex04_client = my_ros2_examples_py.ex04_client:main',
+            'ex05_node = my_ros2_examples_py.ex05:main',
         ],
     },
 )
