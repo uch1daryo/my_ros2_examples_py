@@ -32,6 +32,7 @@ setup(
             'ex04_client = my_ros2_examples_py.ex04_client:main',
             'ex05_node = my_ros2_examples_py.ex05:main',
             'ex07_node = my_ros2_examples_py.ex07:main',
+            'ex08_node = my_ros2_examples_py.ex08:main',
         ],
     },
 )
